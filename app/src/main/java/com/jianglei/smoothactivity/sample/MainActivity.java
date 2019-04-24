@@ -30,8 +30,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SmoothAtyOperator.prepareActivity()
+                        //将参数设置到intent中
                         .putExtraToIntent("intent", "test intent")
+                        //将参数设置到bundle中
                         .putStringToBundle("bundle", "test bundle")
+                        //如果觉得默认的方法不够，可以设置自己想要的intent
+                        //.intent(new Intent()) 如果觉得提供
+                        //如果觉得默认的方法不够，可以设置自己想要的bundle
+                        //.bundle(new Bundle())
                         .build()
                         .startActivity(MainActivity.this, JumpTargetActivity.class);
             }
