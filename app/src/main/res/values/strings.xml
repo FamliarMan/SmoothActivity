@@ -3,4 +3,10 @@
     <string name="app_request_permission">申请权限</string>
     <string name="app_ask_permission_success">被同意的权限：%s</string>
     <string name="app_ask_permission_fail">被拒绝的权限：%s</string>
+    <string name="app_start_activity">startActivity</string>
+    <string name="app_start_activity_result">startActivityForResult</string>
+    <string name="app_get_param">intent参数：%1$s,\n bundle参数：%2$s</string>
+    <string name="app_return">返回上一个页面</string>
+    <string name="app_get_return">获得上一个页面返回参数：%s</string>
+    <string name="app_return_cancel">上一个页面取消返回</string>
 </resources>

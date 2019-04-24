@@ -1,7 +1,6 @@
 package com.jianglei.smoothatyoperator;
 
-import android.app.Activity;
-import android.os.Build;
+import android.support.v4.app.FragmentActivity;
 
 /**
  * @author jianglei on 4/17/19.
@@ -12,8 +11,15 @@ public class SmoothAtyOperator {
      *
      * @param activity 发起的activity
      */
-    public static JlPermission.Builder startPermission(Activity activity) {
+    public static JlPermission.Builder startPermission(FragmentActivity activity) {
         return JlPermission.start(activity);
+    }
+
+    /**
+     * 发起activity跳转请求
+     */
+    public static JlActivity.Builder prepareActivity() {
+        return JlActivity.prepare();
     }
 
 

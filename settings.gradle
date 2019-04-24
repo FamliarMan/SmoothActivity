@@ -1,1 +1,1 @@
-include ':app', ':smoothatyoperator'
+include ':app', ':smoothatyoperator', ':fragmentlifecycler'

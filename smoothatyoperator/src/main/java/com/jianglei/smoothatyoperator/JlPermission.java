@@ -6,6 +6,9 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.FragmentActivity;
+
+import com.jianglei.lifecycler.HelpFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +18,7 @@ import java.util.List;
  */
 public class JlPermission {
     private String[] permissions;
-    private Activity activity;
+    private FragmentActivity activity;
 
     private JlPermission(Builder builder) {
         this.permissions = builder.permissions.toArray(new String[builder.permissions.size()]);
@@ -66,7 +69,7 @@ public class JlPermission {
     }
 
 
-    public static Builder start(Activity activity) {
+    public static Builder start(FragmentActivity activity) {
         if (activity == null) {
             throw new IllegalStateException("You can't apply for a addPermission from a null activity");
         }
@@ -81,9 +84,9 @@ public class JlPermission {
 
     public static class Builder {
         private List<String> permissions = new ArrayList<>();
-        private Activity activity;
+        private FragmentActivity activity;
 
-        public Builder(Activity activity) {
+        public Builder(FragmentActivity activity) {
             this.activity = activity;
         }
 
