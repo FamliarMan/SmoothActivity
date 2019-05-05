@@ -3,7 +3,9 @@
 ## 依赖
 
 ## 基本使用
-
+```
+implementation 'com.jianglei:smoothatyoperator:1.0'
+```
 ### 申请权限
 ```
 SmoothAtyOperator.startPermission(this)			

@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.novoda:bintray-release:0.8.1'
+        classpath 'com.novoda:bintray-release:0.9.1'
     }
 }
 
@@ -46,9 +46,9 @@ dependencies {
 publish {
     userOrg = 'famliarman'
     groupId = 'com.jianglei'//jcenter上的路径
-    artifactId = 'smoothactivity'//项目名称
+    artifactId = 'lifecycler'//项目名称
     publishVersion = '1.0'//版本号
-    desc = 'A library that can monitor activity lifecycler'
-    website = 'https://github.com/FamliarMan/JlPermission'
+    desc = 'A library that can monitor activity lifecycle'
+    website = 'https://github.com/FamliarMan/SmoothActivity'
     repoName ='Android-lib'
 }
